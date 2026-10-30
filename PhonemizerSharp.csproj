@@ -5,11 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>victor-wiki.$(AssemblyName)</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>victor-wiki</Authors>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
-    <RepositoryUrl>https://github.com/victor-wiki/SharpUtility</RepositoryUrl>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <RepositoryUrl>https://github.com/victor-wiki/PhonemizerSharp</RepositoryUrl>
     <Description>C# implementation of the phonemizer which allows simple phonemization of words and texts</Description>
   </PropertyGroup>
 
