@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>victor-wiki.$(AssemblyName)</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>victor-wiki</Authors>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <RepositoryUrl>https://github.com/victor-wiki/SharpUtility</RepositoryUrl>
+    <Description>C# implementation of the phonemizer which allows simple phonemization of words and texts</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="data\espeak\en_dict" />
+    <None Remove="data\espeak\intonations" />
+    <None Remove="data\espeak\lang\gmw\en" />
+    <None Remove="data\espeak\lang\gmw\en-029" />
+    <None Remove="data\espeak\lang\gmw\en-GB-scotland" />
+    <None Remove="data\espeak\lang\gmw\en-GB-x-gbclan" />
+    <None Remove="data\espeak\lang\gmw\en-GB-x-gbcwmd" />
+    <None Remove="data\espeak\lang\gmw\en-GB-x-rp" />
+    <None Remove="data\espeak\lang\gmw\en-US" />
+    <None Remove="data\espeak\lang\gmw\en-US-nyc" />
+    <None Remove="data\espeak\phondata" />
+    <None Remove="data\espeak\phonindex" />
+    <None Remove="data\espeak\phontab" />
+    <None Remove="libespeak-ng.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="data\espeak\en_dict">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\intonations">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-029">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-GB-scotland">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-GB-x-gbclan">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-GB-x-gbcwmd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-GB-x-rp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-US">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\lang\gmw\en-US-nyc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\phondata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\phonindex">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="data\espeak\phontab">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="libespeak-ng.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackagePath>lib\net10.0</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="victor-wiki.PyException" Version="1.0.0" />
+    <PackageReference Include="victor-wiki.SharpUtility" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
