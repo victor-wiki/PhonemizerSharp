@@ -14,6 +14,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
     <None Remove="data\espeak\en_dict" />
     <None Remove="data\espeak\intonations" />
     <None Remove="data\espeak\lang\gmw\en" />
